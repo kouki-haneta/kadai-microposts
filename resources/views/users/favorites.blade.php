@@ -11,14 +11,9 @@
             {{-- タブ --}}
             @include('users.navtabs')
             
-            @if (Auth::id() == $user->id)
-                {{-- 投稿フォーム --}}
-                @include('microposts.form')
-                
-            @endif
-            {{-- 投稿一覧 --}}
-            @include('microposts.microposts')
             
+            {{-- 投稿一覧 --}}
+            @include('favorite.favorite')
             
         </div>
     </div>
